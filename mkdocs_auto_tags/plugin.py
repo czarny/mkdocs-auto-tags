@@ -16,8 +16,8 @@ class AutoTagsConfig(Config):
     # is true). Prefixes are matched longest-first.
     # When not set, tags with immediate parent (or all ancestors if enabled).
     paths = config_options.Type(list, default=[])
-    # Tag with all sections after the prefix (or all ancestors when paths
-    # is not set) instead of just the first one.
+    # Include the prefix sections in the tags (or all ancestors when paths
+    # is not set) instead of just the first section after the prefix.
     all_ancestors = config_options.Type(bool, default=False)
 
 
