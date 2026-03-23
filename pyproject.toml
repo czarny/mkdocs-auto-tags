@@ -19,6 +19,9 @@ classifiers = [
 ]
 dependencies = ["mkdocs>=1.4"]
 
+[project.optional-dependencies]
+dev = ["pytest"]
+
 [project.urls]
 Repository = "https://github.com/czarny/mkdocs-auto-tags"
 
